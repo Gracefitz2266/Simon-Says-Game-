@@ -5,7 +5,7 @@ The Simon electronic memory skill game,  is a classic game of memory and concent
 
 The	Single-Player	Simon	Game	is	as	follows:	
 1. Click	 the	START	button	 to	begin,	 the	game	status	indicator	 (the	 red/green	light	below	 the	START	
-buGon)	switches	from	RED	to	GREEN.	The	game	will	begin	3s	after	the	light	turns	GREEN.	
+tton)	switches	from	RED	to	GREEN.	The	game	will	begin	3s	after	the	light	turns	GREEN.	
 2. Simon	will	give	the	first	signal	(randomly	flash	a	coloured	button).	Repeat	the	signal	by	clicking	the	
 same	colour	button.	
 3. Simon	will	duplicate	 the	first	 signal	and	add	one.	Repeat	 these	 two	 signals	by	clicking	 the	 same	
