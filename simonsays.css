@@ -1,0 +1,383 @@
+#outer-circle { 
+ 
+  position: relative; 
+ 
+  width: 250px; 
+ 
+  height: 300px; 
+ 
+  margin: 50px auto; 
+ 
+} 
+ 
+  
+ 
+.dot1 { 
+ 
+  position: absolute; 
+ 
+  top: 0; 
+ 
+  left: 0; 
+ 
+} 
+ 
+  
+ 
+.dot2 { 
+ 
+  position: absolute; 
+ 
+  top: 0; 
+ 
+  right: 0; 
+ 
+} 
+ 
+  
+ 
+.dot3 { 
+ 
+  position: absolute; 
+ 
+  bottom: 0; 
+ 
+  left: 0; 
+ 
+} 
+ 
+  
+ 
+.dot4 { 
+ 
+  position: absolute; 
+ 
+  bottom: 0; 
+ 
+  right: 0; 
+ 
+} 
+ 
+  
+ 
+.dot1, .dot2, .dot3, .dot4 { 
+ 
+  height: 50px; 
+ 
+  width: 50px; 
+ 
+  border-radius: 50%; 
+ 
+} 
+ 
+  
+ 
+#greencircle { 
+ 
+   
+ 
+    position: absolute; 
+ 
+  bottom: 0; 
+ 
+  left: 0; 
+ 
+  transform: translate(-60%, -50%);  /* make sure its set to top left */
+ 
+  height: 200px; 
+ 
+  width: 200px;
+ 
+  background-color: green; 
+ 
+  border-radius: 50%; 
+ 
+  border: 6px solid black; /* black border around circle */
+ 
+  
+ 
+} 
+ 
+  
+ 
+#redcircle { 
+ 
+  
+ 
+   position: absolute; 
+ 
+  bottom: 0; 
+ 
+  left: 0; 
+ 
+  transform: translate(60%, -50%); /* make sure its set to top right */
+ 
+  height: 200px; 
+ 
+  width: 200px;  
+ 
+  background-color: red; 
+ 
+  border-radius: 50%; 
+ 
+  border: 6px solid black;  
+ 
+  
+ 
+     
+ 
+} 
+ 
+  
+ 
+#yellowcircle { 
+ 
+  position: absolute; 
+ 
+  bottom: 0; 
+ 
+  left: 0; 
+ 
+  transform: translate(-60%, 50%); /* make sure its set to left bottom */
+ 
+  height: 200px; 
+ 
+  width: 200px; 
+ 
+  background-color: yellow; 
+ 
+  border-radius: 50%; 
+ 
+  border: 6px solid black;  
+ 
+} 
+ 
+  
+ 
+#bluecircle { 
+ 
+position: absolute; 
+ 
+  bottom: 0; 
+ 
+  left: 0; 
+ 
+  transform: translate(60%, 55%); /* make sure its set to bottom right */
+ 
+  height: 200px; 
+ 
+  width: 200px; 
+ 
+  background-color: blue; 
+ 
+  border-radius: 50%; 
+ 
+  border: 6px solid black;  
+ 
+  
+ 
+} 
+ 
+  
+ 
+#inner-circle { 
+ 
+  position: absolute; 
+ 
+  top: 50%; 
+ 
+  left: 50%; 
+ 
+  transform: translate(-50%, -50%); /* make sure its in center */
+ 
+  height: 290px; 
+ 
+  width: 290px; 
+ 
+  background-color: black; 
+ 
+  border-radius: 50%; 
+ 
+  border: 6px solid black;  
+ 
+} 
+ 
+#button-container { 
+ 
+  position: absolute; 
+ 
+  top: 50%; 
+ 
+  left: 50%; 
+ 
+  transform: translate(-50%, -50%); 
+ 
+  display: flex; 
+ 
+  align-items: center; 
+ 
+} 
+ 
+  
+ 
+.game-button { 
+ 
+  background-color: lightgrey; /*  button color  */ 
+ 
+  color: #000000; /*  text color  */ 
+ 
+  padding: 15px 15px; 
+ 
+  font-size: 16px; 
+ 
+  border: 2px solid #000000; /* border color  */ 
+ 
+  border-radius: 15%; 
+ 
+  cursor: pointer; 
+ 
+  margin: 9px 20px; /* margin between buttons */ 
+ 
+} 
+ 
+  
+ 
+.game-button:hover { 
+ 
+  background-color: #cccccc; /*  button hover color */ 
+ 
+} 
+ 
+#status-indicator { 
+ 
+  position: absolute; 
+ 
+  bottom: 90px; 
+ 
+  left: 50%; 
+ 
+  transform: translateX(-50%); 
+ 
+  width: 18px; 
+ 
+  height: 18px; 
+ 
+  border-radius: 50%; 
+ 
+  background-color: red; /* Initially red */ 
+ 
+} 
+ 
+  
+ 
+
+
+  
+
+   
+
+  
+
+.game-button {  
+
+  
+
+  background-color: lightgrey; /*  button color  */  
+
+  
+
+  color: #000000; /*  text color  */  
+
+  
+
+  padding: 15px 15px;  
+
+  
+
+  font-size: 16px;  
+
+  
+
+  border: 2px solid #000000; /* border color  */  
+
+  
+
+  border-radius: 15%;  
+
+  
+
+  cursor: pointer;  
+
+  
+
+  margin: 9px 20px; /* margin between buttons */  
+
+  
+
+}  
+
+  
+
+   
+
+  
+
+.game-button:hover {  
+
+  
+
+  background-color: #cccccc; /*  button hover color */  
+
+  
+
+}  
+
+  
+
+#status-indicator {  
+
+  
+
+  position: absolute;  
+
+  
+
+  bottom: 90px;  
+
+  
+
+  left: 50%;  
+
+  
+
+  transform: translateX(-50%);  
+
+  
+
+  width: 18px;  
+
+  
+
+  height: 18px;  
+
+  
+
+  border-radius: 50%;  
+
+  
+
+  background-color: red; /* Initially red */  
+
+  
+
+}  
+
+  
+
+   
+
+  
+
+
+  
+  
